@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SecureAudit AI</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div>
+        <h1>SecureAudit AI</h1>
+        <p class="tag">Local · zero-trust · MCP-ready</p>
+      </div>
+      <div class="hero-actions">
+        <button type="button" id="btn-scan" class="primary">Run full audit</button>
+        <button type="button" id="btn-alert" class="secondary">Send alert (privacy proxy)</button>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2>Data vault</h2>
+      <p id="data-root" class="mono muted">Loading…</p>
+      <p class="muted">Choose which files to include in full audit:</p>
+      <ul id="file-list" class="file-list"></ul>
+    </section>
+
+    <section class="panel grid-2">
+      <div>
+        <h2>Webhook</h2>
+        <label class="stack">
+          <span>URL (Slack / Teams incoming webhook)</span>
+          <input type="url" id="webhook" placeholder="https://hooks.slack.com/services/…" autocomplete="off" />
+        </label>
+        <label class="inline">
+          <input type="checkbox" id="dry-run" checked />
+          Dry run only (no HTTP POST)
+        </label>
+      </div>
+      <div>
+        <h2>Status</h2>
+        <p id="status" class="mono muted">Idle.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Results <span id="badge" class="badge hidden"></span></h2>
+      <pre id="output" class="output">Run an audit to see scrubbed JSON.</pre>
+    </section>
+
+    <footer class="foot">
+      <p>MCP: run <code>python -m secureaudit</code> from the project venv. API: <code>/api/scan/full</code>, <code>/api/alert</code>.</p>
+    </footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

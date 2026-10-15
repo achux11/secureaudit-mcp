@@ -1,0 +1,5 @@
+invoice_id,vendor_id,amount,invoice_date,memo,account_last4
+INV-ERP-1042,VEND-ACME-01,1200.50,2024-07-15,Software renewal — Oracle dept,4421
+INV-ERP-1043,VEND-NORTH-22,5000.00,2024-07-01,Consulting Phase 2,8890
+INV-ERP-1044,VEND-ACME-01,250.00,2024-08-03,Freight charges,4421
+INV-ERP-1045,VEND-EAST-09,13330.25,2024-09-10,Hardware staging,stripe-auth-3392

@@ -1,0 +1,5 @@
+legacy_inv_no,supplier_code,amt_usd,posted_on,notes,contact_email
+LEG-77821,VEND-ACME-01,1200.50,2024-07-15,Oracle dept software,procurement@acme.example
+LEG-77888,VEND-NORTH-22,5000.00,2024-07-01,Consulting p2,ap@north.example
+LEG-77901,VEND-ACME-01,1200.50,2024-07-15,Duplicate billing line item,ar@internal.corp
+LEG-77940,VEND-UNKNOWN-99,999999.99,2024-09-11,Suspicious amount test,jdoe@employee.corp

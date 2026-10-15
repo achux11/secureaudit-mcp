@@ -1,0 +1,34 @@
+[
+  {
+    "ts": "2024-08-01T10:00:00Z",
+    "actor": "svc-ci@internal.corp",
+    "action": "role_granted",
+    "role": "finance_readonly",
+    "resource": "erp_reports",
+    "ticket": "CHG-9912"
+  },
+  {
+    "ts": "2024-08-02T11:24:00Z",
+    "actor": "contractor@external-vendor.com",
+    "action": "role_granted",
+    "role": "superuser",
+    "resource": "payment_gateway",
+    "ticket": ""
+  },
+  {
+    "ts": "2024-08-03T08:05:00Z",
+    "actor": "bob@internal.corp",
+    "action": "role_granted",
+    "role": "finance_admin",
+    "resource": "core_ledger",
+    "ticket": "CHG-10001"
+  },
+  {
+    "ts": "2024-08-04T22:13:00Z",
+    "actor": "bob@internal.corp",
+    "action": "permission_changed",
+    "role": "db_owner",
+    "resource": "core_ledger",
+    "ticket": ""
+  }
+]
